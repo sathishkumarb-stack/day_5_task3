@@ -1,0 +1,17 @@
+[project]
+name = "webhook-receiver"
+version = "1.0.0"
+description = "FastAPI Webhook Receiver with HMAC-SHA256"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx"
+]
